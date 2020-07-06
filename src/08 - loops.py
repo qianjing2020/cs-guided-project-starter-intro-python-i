@@ -59,3 +59,20 @@ numbers = [
     958, 609, 842, 451, 688, 753, 854, 685, 93, 857, 440, 380, 126, 721, 328, 753, 470,
     743, 527
 ]
+# o oh, this is loop practice!
+# let's check which one is more efficient? loop or list comprehension? 
+import time
+t1 = time.time()
+odd_lc = [item for item in numbers if item % 2 != 0 and numbers.index(item) < numbers.index(412)]
+T1 = time.time - t1
+
+
+t2=time.time()
+odd = []
+stop_at = numbers.index(412)
+for item in numbers[:stop_at]:
+    if item % 2 != 0:
+        odd.append(item)
+T2 = time.time-t2
+print(f'list comprehension takes {T1}, loop takes {T2}')
+print(odd)

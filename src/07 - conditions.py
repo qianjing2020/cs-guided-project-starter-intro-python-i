@@ -58,14 +58,14 @@ second_number = 10
 first_array = []
 second_array = [1,2,3]
 
-print(bool(number > 15))
+print(bool(number < 15))
 
-print(bool(first_array))
+print(bool(not first_array))
 
-print(len(second_array) == 2)
+print(len(second_array) != 2)
 
-print(len(first_array) + len(second_array) == 5)
+print(len(first_array) + len(second_array) == 3)
 
-print(first_array and first_array[0] == 1)
+print(first_array or second_array[0] == 1)
 
-print(not second_number)
+print(not not second_number)

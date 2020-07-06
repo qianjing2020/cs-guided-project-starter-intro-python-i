@@ -40,7 +40,7 @@ astring = "Hello world!"
 print(astring.upper())
 print(astring.lower())
 
-# 9. startswith and endswith
+# 9. startswith and endswiths
 astring = "Hello world!"
 print(astring.startswith("Hello"))
 print(astring.endswith("asdfasdfasdf"))
@@ -52,29 +52,30 @@ print(afewwords)
 
 """
 YOU DO
-5 minute timer
+5 minute timers
 """
 # assign the string "Strings are awesome!" to a variable
-
+s = "Strings are awesome!"
 # print the length of the string
-
+print(len(s))
 # print the first occurrence of "a"
-
+print(s.index("a"))
 # print the count of the number of "a"s in the string
-
+print(s.count("a"))
 # print the first five characters
-
+print(s[:5])
 # print the last five characters in reverse
-
+print(s[-5:])
 # print the 17th character
+print(s[16])
 
 # print all the odd indexes
-
+print([item for item in range(1, len(s),2)])
 # print the string in all uppercase
-
+print(s.upper())
 # print the string in all lowercase
-
+print(s.lower())
 # check that the string starts with "S" and ends with "!"
-
+print(s.startswith('S') and s.endswith("!"))
 # split the string on the spaces
-
+print(s.split(' '))

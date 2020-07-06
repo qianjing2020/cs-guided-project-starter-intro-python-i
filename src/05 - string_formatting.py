@@ -19,7 +19,7 @@ print("Hello, %s!" % name)
 name = "John"
 age = 23
 print("%s is %d years old." % (name, age))
-
+print(f"{name} is {age:.3f} years old.")
 """
 3. Any object which is not a string can be formatted
 using the %s operator as well
